@@ -1,0 +1,28 @@
+r1:
+  hostname: '192.168.3.1'
+  username: 'gnslab'
+  password: 'cisco'
+  groups: 
+    - routers
+  data:
+    site: core
+    
+sw1:
+  hostname: '192.168.3.2'
+  username: 'gnslab'
+  password: 'cisco'
+  groups: 
+    - switch
+  data:
+    site: switch1
+    
+
+sw2:
+  hostname: '192.168.3.3'
+  username: 'gnslab'
+  password: 'cisco'
+  groups: 
+    - switch
+  data:
+    site: switch2
+    

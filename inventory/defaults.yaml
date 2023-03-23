@@ -1,0 +1,5 @@
+platform: 'ios'
+username: 'gnslab'
+password: 'cisco'
+data:
+  domain: python.com

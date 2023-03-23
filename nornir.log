@@ -1,0 +1,2093 @@
+2023-02-13 22:07:38,424 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:07:38,430 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:07:38,431 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:07:38,431 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:08:03,441 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:08:03,447 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:08:03,447 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:08:03,448 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:08:42,218 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:10:15,576 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:10:15,581 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:10:15,581 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:10:15,581 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "nornir_test.py", line 19, in hello_world
+    result = f"{task.hostname} says hello world"
+AttributeError: 'Task' object has no attribute 'hostname'
+
+2023-02-13 22:10:30,011 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:11:17,039 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:26:50,127 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:27:24,109 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:27:47,708 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-13 22:31:25,904 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:34:52,837 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:41:18,985 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'vem comigo monstro'} on 3 hosts
+2023-02-15 21:44:33,329 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:45:54,602 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:46:28,710 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:46:34,696 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:46:59,619 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:50:00,847 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:50:29,957 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2023-02-15 21:50:46,381 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'vem comigo monstro'} on 3 hosts
+2023-02-15 21:50:46,386 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 10, in say
+    host=task.host.filter(site="switch"),
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 368, in __getattribute__
+    return object.__getattribute__(self, name)
+AttributeError: 'Host' object has no attribute 'filter'
+
+2023-02-15 21:50:46,386 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 10, in say
+    host=task.host.filter(site="switch"),
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 368, in __getattribute__
+    return object.__getattribute__(self, name)
+AttributeError: 'Host' object has no attribute 'filter'
+
+2023-02-15 21:50:46,386 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 10, in say
+    host=task.host.filter(site="switch"),
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 368, in __getattribute__
+    return object.__getattribute__(self, name)
+AttributeError: 'Host' object has no attribute 'filter'
+
+2023-02-15 21:51:17,644 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'vem comigo monstro'} on 3 hosts
+2023-02-15 21:51:17,648 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 11, in say
+    host=task.filter(site="switch").host,
+AttributeError: 'Task' object has no attribute 'filter'
+
+2023-02-15 21:51:17,648 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 11, in say
+    host=task.filter(site="switch").host,
+AttributeError: 'Task' object has no attribute 'filter'
+
+2023-02-15 21:51:17,649 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 11, in say
+    host=task.filter(site="switch").host,
+AttributeError: 'Task' object has no attribute 'filter'
+
+2023-02-15 21:51:33,434 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'vem comigo monstro'} on 3 hosts
+2023-02-15 21:51:33,439 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 12, in say
+    result=f"{task.host.name.filter(site='switch')} say {text}"
+AttributeError: 'str' object has no attribute 'filter'
+
+2023-02-15 21:51:33,439 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 12, in say
+    result=f"{task.host.name.filter(site='switch')} say {text}"
+AttributeError: 'str' object has no attribute 'filter'
+
+2023-02-15 21:51:33,439 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 12, in say
+    result=f"{task.host.name.filter(site='switch')} say {text}"
+AttributeError: 'str' object has no attribute 'filter'
+
+2023-02-15 21:51:43,864 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'vem comigo monstro'} on 3 hosts
+2023-02-15 21:53:14,990 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'vem comigo monstro'} on 3 hosts
+2023-02-15 21:53:14,991 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 5} on 3 hosts
+2023-02-15 21:53:58,589 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'vem comigo monstro'} on 3 hosts
+2023-02-15 21:53:58,590 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 5} on 3 hosts
+2023-02-15 21:53:58,592 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 7} on 3 hosts
+2023-02-15 21:55:40,489 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 3 hosts
+2023-02-15 21:56:16,042 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 3 hosts
+2023-02-15 21:59:34,963 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'oioi'} on 3 hosts
+2023-02-15 21:59:34,966 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 12, in say
+    raise Exception
+Exception
+
+2023-02-15 22:02:21,342 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'oioi'} on 3 hosts
+2023-02-15 22:02:21,345 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:02:21,346 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 3 hosts
+2023-02-15 22:02:21,347 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: say() got an unexpected keyword argument 'number'
+
+2023-02-15 22:02:21,347 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: say() got an unexpected keyword argument 'number'
+
+2023-02-15 22:02:40,793 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'oioi'} on 3 hosts
+2023-02-15 22:02:40,796 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:02:40,797 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 3 hosts
+2023-02-15 22:03:41,879 -  nornir.core -     INFO -        run() - Running task 'test' with args {'text': 'oioi'} on 3 hosts
+2023-02-15 22:03:41,882 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:03:41,883 -  nornir.core -  WARNING -        run() - Task 'test' has not been run – 0 hosts selected
+2023-02-15 22:03:53,661 -  nornir.core -  WARNING -        run() - Task 'test' has not been run – 0 hosts selected
+2023-02-15 22:04:11,406 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:04:11,409 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:04:11,410 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:05:07,795 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:05:07,798 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:05:07,798 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:08:42,589 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:08:42,592 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:08:42,593 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:09:41,349 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:09:41,352 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:09:41,353 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:09:47,322 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:09:47,325 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:09:47,326 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:11:47,302 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:11:47,305 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:11:47,306 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:12:16,572 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:12:16,575 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:12:16,576 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:12:37,287 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:12:37,290 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:12:37,291 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:14:18,866 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:14:18,869 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:14:18,870 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:14:46,005 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:14:46,008 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:14:46,009 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:15:14,247 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:15:14,250 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:15:14,251 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:15:47,880 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:15:47,883 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:15:47,884 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:16:08,509 -  nornir.core -     INFO -        run() - Running task 'test' with args {'number': 8} on 2 hosts
+2023-02-15 22:16:08,512 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:16:08,512 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:16:24,886 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:16:24,889 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:16:24,890 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:16:49,021 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:16:49,024 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:16:49,025 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:17:42,633 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:17:42,636 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:17:42,637 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:17:51,212 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:17:51,215 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception
+Exception
+
+2023-02-15 22:17:51,215 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:19:33,766 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:19:33,769 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:19:33,770 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:20:03,711 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:20:03,714 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:20:03,714 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:20:54,716 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:20:54,718 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:20:54,719 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:22:34,219 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:22:34,222 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:22:34,222 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:24:32,664 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:24:32,667 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:24:32,668 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:29:21,632 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:29:21,637 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:29:21,637 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:29:21,638 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-02-15 22:29:44,355 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:29:44,359 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:29:44,360 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:29:44,360 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-02-15 22:29:58,890 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:29:58,893 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:29:58,894 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:29:58,895 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-02-15 22:30:15,054 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:30:15,057 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:30:15,058 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:30:15,058 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-02-15 22:31:40,661 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:31:40,664 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:31:40,665 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:31:40,666 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-02-15 22:32:36,519 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:32:36,522 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:32:36,523 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:32:36,524 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-02-15 22:33:38,882 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:33:38,886 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 14, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:33:38,887 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 29, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:33:38,887 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-02-15 22:35:39,544 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-02-15 22:35:39,547 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:35:39,548 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-02-15 22:36:17,546 -  nornir.core -     INFO -        run() - Running task 'greet_and_count' with args {'number': 5} on 2 hosts
+2023-02-15 22:36:17,549 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-02-15 22:36:17,550 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'greet_and_count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:15:43,190 -  nornir.core -     INFO -        run() - Running task 'greet_and_count' with args {'number': 5} on 2 hosts
+2023-03-09 20:15:43,194 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:15:43,195 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'greet_and_count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:16:03,441 -  nornir.core -     INFO -        run() - Running task 'greet_and_count' with args {'number': 5} on 2 hosts
+2023-03-09 20:16:03,445 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:16:03,446 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'greet_and_count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:16:13,723 -  nornir.core -     INFO -        run() - Running task 'greet_and_count' with args {'number': 5} on 2 hosts
+2023-03-09 20:16:13,726 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:16:13,728 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'greet_and_count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:16:16,508 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:16:16,512 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:16:16,514 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:17:53,081 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:17:53,085 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:17:53,086 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:18:06,973 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:18:06,976 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:18:06,978 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:19:13,510 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:19:13,513 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:19:13,514 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:19:43,948 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:19:43,951 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:19:43,952 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:19:43,952 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:19:52,027 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:19:52,031 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:19:52,032 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:19:52,032 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:20:28,743 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:20:28,746 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:20:28,747 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:20:28,747 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:20:43,070 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:20:43,073 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:20:43,074 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:20:43,074 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:21:03,316 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:21:03,319 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:21:03,320 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:21:03,320 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:21:11,515 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:21:11,519 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:21:11,519 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:21:11,520 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:21:27,087 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:21:27,090 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:21:27,091 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:21:27,092 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:21:41,692 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:21:41,695 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:21:41,696 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:21:41,697 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:21:51,074 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:21:51,077 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:21:51,078 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:21:51,079 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:22:26,773 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:22:26,775 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:22:26,776 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:22:35,666 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:22:35,669 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:22:35,670 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:22:35,670 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-09 20:23:00,929 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-09 20:23:00,932 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-09 20:23:00,933 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-09 20:23:00,934 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-20 20:37:25,555 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-20 20:37:25,559 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-20 20:37:25,561 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-20 20:37:25,561 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-20 20:39:03,816 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-20 20:39:03,819 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 15, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-20 20:39:03,821 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 30, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-20 20:39:03,821 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-20 20:40:40,995 -  nornir.core -  WARNING -        run() - Task 'Greet and Count' has not been run – 0 hosts selected
+2023-03-20 20:40:57,625 -  nornir.core -  WARNING -        run() - Task 'Greet and Count' has not been run – 0 hosts selected
+2023-03-20 20:43:11,164 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-20 20:43:11,168 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 18, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-20 20:43:11,170 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 33, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-20 20:43:11,171 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-20 20:44:04,817 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-20 20:44:04,821 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 18, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-20 20:44:04,822 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 33, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-20 20:44:04,824 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-20 20:46:19,891 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 2 hosts
+2023-03-20 20:46:19,895 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greeting is the polite thing to do' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 18, in say
+    raise Exception("I won't say anything for you, pigs!!")
+Exception: I won't say anything for you, pigs!!
+
+2023-03-20 20:46:19,896 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Greet and Count' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "task._nornir.py", line 33, in greet_and_count
+    task.run(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Greeting is the polite thing to do (failed)
+
+
+2023-03-20 20:46:19,898 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 2 hosts
+2023-03-20 20:46:40,546 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 1 hosts
+2023-03-20 20:47:17,302 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 1 hosts
+2023-03-20 20:47:28,975 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 1 hosts
+2023-03-20 20:47:28,976 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 1 hosts
+2023-03-20 20:47:50,175 -  nornir.core -     INFO -        run() - Running task 'Greet and Count' with args {'number': 8} on 1 hosts
+2023-03-20 20:47:50,177 -  nornir.core -     INFO -        run() - Running task 'hi' with args {} on 1 hosts
+2023-03-20 21:05:11,480 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-20 21:07:00,597 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-20 21:07:29,865 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-20 21:09:58,153 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-20 21:09:58,155 -  nornir.core -     INFO -        run() - Running task 'bye!' with args {'greet': 'bye'} on 3 hosts
+2023-03-20 21:36:03,892 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:36:03,894 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:37:55,421 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:37:55,422 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:39:40,999 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:39:41,000 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:46:53,314 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:46:53,315 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:47:11,801 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 3 hosts
+2023-03-20 21:47:11,806 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:47:11,807 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:47:11,807 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:54:07,244 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 3 hosts
+2023-03-20 21:54:07,247 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:54:07,248 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:54:07,248 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:54:23,491 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:54:23,492 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:55:49,145 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:55:49,146 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:57:18,853 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:57:18,854 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:58:08,072 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-20 21:58:08,073 - nornir.core.task -    ERROR -      start() - Host 'r1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 354, in ConnectHandler
+    device_type = kwargs["device_type"]
+KeyError: 'device_type'
+
+2023-03-20 21:58:36,828 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 1 hosts
+2023-03-21 21:32:39,287 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config'} on 2 hosts
+2023-03-21 21:33:21,253 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'running-config interface fastEthernet 0/0'} on 2 hosts
+2023-03-21 21:33:34,688 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show running-config interface fastEthernet 0/0'} on 2 hosts
+2023-03-21 21:56:28,559 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 21:57:13,274 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 21:58:05,670 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 21:58:46,410 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 21:59:28,605 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:01:05,423 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:01:31,207 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:02:54,094 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:03:38,233 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:06:37,568 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:06:53,098 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:07:57,135 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:08:07,865 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:08:55,973 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:09:30,105 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:10:42,921 -  nornir.core -  WARNING -        run() - Task 'add_vlan' has not been run – 0 hosts selected
+2023-03-21 22:12:21,996 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 15, 'vlan_name': 'TestPy'} on 2 hosts
+2023-03-21 22:27:12,613 -  nornir.core -     INFO -        run() - Running task 'full_vlan' with args {'vlan_id': '1/1', 'interface_id': '1/1', 'vlan_name': 'Testfull'} on 2 hosts
+2023-03-21 22:28:26,459 -  nornir.core -     INFO -        run() - Running task 'full_vlan' with args {'vlan_id': '1/2', 'interface_id': '1/2', 'vlan_name': 'TestFull'} on 2 hosts
+2023-03-21 22:30:12,171 -  nornir.core -     INFO -        run() - Running task 'full_vlan' with args {'vlan_id': 30, 'interface_id': '1/2', 'vlan_name': 'TestFull'} on 2 hosts
+2023-03-21 22:31:14,857 -  nornir.core -     INFO -        run() - Running task 'rollback' with args {'vlan_id': 30, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:41:33,012 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:41:33,014 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: rollback_point() missing 1 required positional argument: 'vlan_name'
+
+2023-03-21 22:41:33,014 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: rollback_point() missing 1 required positional argument: 'vlan_name'
+
+2023-03-21 22:42:05,672 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:42:07,150 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/utilities.py", line 592, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1662, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1879, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2023-03-21 22:42:07,154 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 49, in rollback_point
+    task.run(task=netmiko_send_command,command_string=[f"show running-config interface FastEthernet {interface_id}"])
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2023-03-21 22:42:07,177 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/utilities.py", line 592, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1662, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1879, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2023-03-21 22:42:07,178 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 49, in rollback_point
+    task.run(task=netmiko_send_command,command_string=[f"show running-config interface FastEthernet {interface_id}"])
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2023-03-21 22:42:49,495 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:43:15,723 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:44:01,066 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:45:05,127 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:50:22,254 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-21 22:50:22,256 -  nornir.core -     INFO -        run() - Running task 'bye!' with args {'greet': 'bye'} on 3 hosts
+2023-03-21 22:50:56,530 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-21 22:50:56,532 -  nornir.core -     INFO -        run() - Running task 'bye!' with args {'greet': 'bye'} on 3 hosts
+2023-03-21 22:51:15,172 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-21 22:51:15,174 -  nornir.core -     INFO -        run() - Running task 'bye!' with args {'greet': 'bye'} on 3 hosts
+2023-03-21 22:51:15,202 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:52:59,258 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:52:59,263 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 169, in run
+    r = run_task.start(self.host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 94, in start
+    self.processors.subtask_instance_started(self, host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/processor.py", line 89, in subtask_instance_started
+    p.subtask_instance_started(task, host)
+AttributeError: 'SaveResultToDict' object has no attribute 'subtask_instance_started'
+
+2023-03-21 22:52:59,263 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 169, in run
+    r = run_task.start(self.host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 94, in start
+    self.processors.subtask_instance_started(self, host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/processor.py", line 89, in subtask_instance_started
+    p.subtask_instance_started(task, host)
+AttributeError: 'SaveResultToDict' object has no attribute 'subtask_instance_started'
+
+2023-03-21 22:53:48,960 -  nornir.core -     INFO -        run() - Running task 'hi!' with args {'greet': 'hi'} on 3 hosts
+2023-03-21 22:53:48,963 -  nornir.core -     INFO -        run() - Running task 'bye!' with args {'greet': 'bye'} on 3 hosts
+2023-03-21 22:53:48,991 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:53:48,994 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 169, in run
+    r = run_task.start(self.host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 94, in start
+    self.processors.subtask_instance_started(self, host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/processor.py", line 89, in subtask_instance_started
+    p.subtask_instance_started(task, host)
+AttributeError: 'SaveResultToDict' object has no attribute 'subtask_instance_started'
+
+2023-03-21 22:53:48,994 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 169, in run
+    r = run_task.start(self.host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 94, in start
+    self.processors.subtask_instance_started(self, host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/processor.py", line 89, in subtask_instance_started
+    p.subtask_instance_started(task, host)
+AttributeError: 'SaveResultToDict' object has no attribute 'subtask_instance_started'
+
+2023-03-21 22:54:05,475 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:54:05,478 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 169, in run
+    r = run_task.start(self.host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 94, in start
+    self.processors.subtask_instance_started(self, host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/processor.py", line 89, in subtask_instance_started
+    p.subtask_instance_started(task, host)
+AttributeError: 'PrintResult' object has no attribute 'subtask_instance_started'
+
+2023-03-21 22:54:05,478 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'rollback_point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 169, in run
+    r = run_task.start(self.host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 94, in start
+    self.processors.subtask_instance_started(self, host)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/processor.py", line 89, in subtask_instance_started
+    p.subtask_instance_started(task, host)
+AttributeError: 'PrintResult' object has no attribute 'subtask_instance_started'
+
+2023-03-21 22:54:21,993 -  nornir.core -     INFO -        run() - Running task 'rollback_point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 22:55:12,656 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 23:00:03,383 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 23:00:05,624 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 52, in rollback_point
+    itf_data = interface_rollback[1]
+IndexError: list index out of range
+
+2023-03-21 23:00:05,625 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 52, in rollback_point
+    itf_data = interface_rollback[1]
+IndexError: list index out of range
+
+2023-03-21 23:01:09,238 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 23:01:24,987 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 23:02:14,258 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-21 23:03:16,943 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-22 21:40:10,562 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-22 21:40:13,169 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Interface Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/paramiko/client.py", line 388, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.3.3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1068, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.3.3:22
+
+
+
+2023-03-22 21:40:13,169 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Interface Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/paramiko/client.py", line 388, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.3.2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1068, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.3.2:22
+
+
+
+2023-03-22 21:40:13,171 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    interface_rollback = task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Interface Config (failed)
+
+
+2023-03-22 21:40:13,171 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    interface_rollback = task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Interface Config (failed)
+
+
+2023-03-22 21:42:04,822 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-22 21:42:14,839 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Interface Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/paramiko/client.py", line 365, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1068, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.3.2:22
+
+
+
+2023-03-22 21:42:14,839 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Interface Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/paramiko/client.py", line 365, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/pedro/.local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1068, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.3.3:22
+
+
+
+2023-03-22 21:42:14,841 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    interface_rollback = task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Interface Config (failed)
+
+
+2023-03-22 21:42:14,842 - nornir.core.task -    ERROR -      start() - Host 'sw2': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 51, in rollback_point
+    interface_rollback = task.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config interface FastEthernet {interface_id}")
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Interface Config (failed)
+
+
+2023-03-22 21:45:10,345 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-22 21:46:17,458 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 2 hosts
+2023-03-22 21:48:15,733 -  nornir.core -  WARNING -        run() - Task 'Point' has not been run – 0 hosts selected
+2023-03-22 21:48:29,430 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:50:29,932 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:51:05,334 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:55:19,212 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:55:21,898 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 54, in rollback_point
+    list_vlan = " ".join(str(ip).split())
+NameError: name 'ip' is not defined
+
+2023-03-22 21:55:40,483 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:56:07,423 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:57:37,242 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:57:39,982 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 54, in rollback_point
+    list_vlan = vlan_rollback[0].replace("-","")
+AttributeError: 'Result' object has no attribute 'replace'
+
+2023-03-22 21:58:03,856 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:58:06,608 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 55, in rollback_point
+    list_vlan = list_vlan.replace("-","")
+AttributeError: 'Result' object has no attribute 'replace'
+
+2023-03-22 21:58:19,683 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:58:41,379 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:59:33,276 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 21:59:35,871 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 55, in rollback_point
+    list_vlan = " ".join(str(list_vlan.replace("-","")).split())
+AttributeError: 'Result' object has no attribute 'replace'
+
+2023-03-22 22:00:11,069 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:01:26,050 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:02:03,063 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:05:00,124 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:05:19,815 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:05:35,986 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:05:46,515 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:07:20,807 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 15, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:09:52,658 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:20:01,526 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:20:04,278 - nornir.core.task -    ERROR -      start() - Host 'sw1': task 'Point' failed with traceback:
+Traceback (most recent call last):
+  File "/home/pedro/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "vlan.py", line 62, in rollback_point
+    rollback_command_file_vlan.write(f"no vlan {list_vlan[4]}")
+io.UnsupportedOperation: not writable
+
+2023-03-22 22:20:27,000 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:20:59,628 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:24:05,249 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:24:40,956 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:26:29,377 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:27:24,326 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:27:43,151 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:30:28,881 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts
+2023-03-22 22:30:48,626 -  nornir.core -     INFO -        run() - Running task 'Point' with args {'vlan_id': 200, 'interface_id': '1/2'} on 1 hosts

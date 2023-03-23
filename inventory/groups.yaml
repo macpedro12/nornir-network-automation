@@ -1,0 +1,7 @@
+routers:
+    data:
+      asn: 200
+switch:
+    data:
+      domain: switch.local
+      asn: 100
