@@ -5,10 +5,12 @@ from nornir_netmiko import netmiko_send_command
 from nornir_netmiko import netmiko_send_config
 from nornir_utils.plugins.functions import print_result
 
+import sys
 import os
 
 from doc_nornir_files.processors import PrintResult, SaveResultToDict
-from utils.rollback import rollback_point,rollback,rollback_diff
+from utils.rollback import rollback_point,rollback_diff
+from utils.rollback import rollback as vlan_rollback
 
 nr = InitNornir(config_file="config.yaml")
 switch = nr.filter(F(groups__contains="switch"))
@@ -39,23 +41,49 @@ def add_itf_to_vlan(task: Task, vlan_id: int, interface_id: str) -> Result:
         host = task.host,
         result=commands
     )
-    
+
 def full_vlan(task: Task,vlan_id: int, interface_id: str,vlan_name: str) -> Result:
     
-    rollback_point(task=task,service_name=service_name,vlan_id=vlan_id,interface_id=interface_id,devices_object=switch,devices=devices)
-    
-    #task.run(task=add_vlan,vlan_id=vlan_id,vlan_name=vlan_name)
+    task.run(task=add_vlan,vlan_id=vlan_id,vlan_name=vlan_name)
     task.run(task=add_itf_to_vlan,vlan_id=vlan_id,interface_id=interface_id)
-    
-    rollback_diff(interface_id="1/2",service_id=1,devices=devices,devices_object=switch)
-    
+        
+    return Result (
+        host=task.host,
+        result="Added Interface Config"
+    )
 
-rollback(devices_object=switch,devices=devices,service_id=1)
 
 
-
+vlan_id=300
+interface_id="1/2"
 service_name = 'vlan'
-""" result = switch.run(name=service_name,task=full_vlan,vlan_id=300,interface_id="1/2",vlan_name="ChangeTeste")
-print(result)
- """
+
+#This service provides configs to Interface
+#Show running config will run:   
+sh_run_append = f"interface FastEthernet {interface_id}"
+
+def service_vlan():
+    
+    service_id = rollback_point(service_name=service_name,vlan_id=vlan_id,sh_run_append=sh_run_append,devices_object=switch,devices=devices)
+
+    switch.run(name=service_name,task=full_vlan,vlan_id=vlan_id,interface_id=interface_id,vlan_name="ChangeTeste")
+
+    rollback_diff(sh_run_append=sh_run_append,service_name=service_name,service_id=service_id,devices=devices,devices_object=switch)
+
+#Choosed to keep the rollback in the service file, because it's easier to call the parameters
+def rollback(service_id: int):
+    
+    vlan_rollback(devices_object=switch,devices=devices,service_name=service_name,service_id=service_id)
+
+
+#Needed this to be able to call the service creation and the rollback
+#It will be usefull when the edit option is developed
+if __name__ == '__main__':
+    args = sys.argv
+    # args[0] = current file
+    # args[1] = function name
+    # args[2:] = function args : (*unpacked)
+    globals()[args[1]](*args[2:])
+
+
 
