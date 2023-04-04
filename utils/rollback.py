@@ -26,14 +26,14 @@ def rollback(devices_object: object,service_name: str, service_id: int, devices:
     print(f"Rollback executed with success")
     
 #Main point of the generation of the rollback file
-def rollback_point(service_name: str,vlan_id: int, sh_run_append: str,devices_object: object, devices: list):
+def rollback_point(service_name: str, sh_run_append: str,devices_object: object, devices: list):
     
     service_name = service_name.lower()
     
     service_id = get_last_id(service_name=service_name)
     rollback_database(service_name=service_name,devices=devices,service_id=service_id)
     
-    vlan_rollback_block(service_id=service_id,vlan_id=vlan_id,devices_object=devices_object,devices=devices)
+    #vlan_rollback_block(service_id=service_id,vlan_id=vlan_id,devices_object=devices_object,devices=devices)
     general_rollback_block(service_id=service_id, service_name=service_name,sh_run_append=sh_run_append,devices_object=devices_object,devices=devices)
     
     return service_id
@@ -98,10 +98,10 @@ def get_last_id(service_name: str):
 def rollback_database(service_name: str, devices: list, service_id: int) -> Result:
     for host in devices:
         if os.path.exists(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}"):          
-            os.mkdir(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_vlan/rollback_vlan_{service_id}_{host}")
+            os.mkdir(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}")
             
         else:
-            os.makedirs(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_vlan/rollback_vlan_{service_id}_{host}")
+            os.makedirs(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}")
 
 #Function used to compare the initial config retrieved before executing the service and the new config after the execution
 #The diff will see if the the new config exists in the old config, if a old config has changed and if a new config has been implemented.          
@@ -124,9 +124,10 @@ def rollback_diff(sh_run_append: str, service_name:str, service_id: int, devices
         #New rollback file
         new_rollback_file = open(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}/GeneralConfig.txt",'w')
         for command in new_config_list:
-           
+            print(command)
             combined_list = "\t".join(initial_config_list)
-
+            print(combined_list)
+            print("shutdown" in combined_list)
             #Check if the new config is in the old configuration.
             if command.strip() in initial_config_list:
                 new_rollback_file.write(f"{command}\n")
@@ -141,8 +142,11 @@ def rollback_diff(sh_run_append: str, service_name:str, service_id: int, devices
                 new_rollback_file.write(f"{match[0]}\n")
             
             #Check if the new config is really new lol     
-            elif command.strip not in initial_config_list:
+            elif command.strip() not in initial_config_list:
                 new_rollback_file.write(f"no {command.strip()}\n")
+        #Check if a interface was in a shutdown state, it wasn't possible to get this config in the diff, because the show running don't displays 'no shutdown'    
+        if "shutdown" in combined_list:
+                new_rollback_file.write(f"shutdown\n")
                 
         new_rollback_file.close()
 
