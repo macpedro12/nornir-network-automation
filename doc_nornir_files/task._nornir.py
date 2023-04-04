@@ -10,11 +10,9 @@ nr = InitNornir(config_file="config.yaml" )
 #Filter by group
 #router = nr.filter(F(groups__contains="routers"))    
 
-switch = nr.filter(site="switch")
+switch = nr.filter(F(groups__contains="switch"))
 
 def say(task: Task, text: str) -> Result:
-    if task.host.name =="sw2":
-        raise Exception("I won't say anything for you, pigs!!")
     return Result(
         host=task.host,
         result=f"{task.host.name} say {text}"
@@ -66,15 +64,15 @@ result=switch.run(name='Greet and Count',task=greet_and_count,number=8)
 #unless you pass the severity_level as parameter in print_result
 
 #result is a dic where the keys are the hosts and inside of every key is a list with the results of the tasks.
-print(result['r1'][0])
+#print(result['sw1'][0])
 #print(result['sw2'])
-print_result(result)
+print(result)
 
 #Check if the taks changed anything in the system or failed
 #print("changed: ",result['sw2'].changed)
-print("failed: ",result.failed)
+#print("failed: ",result.failed)
 #Check the hosts which failed a task
-print(result.failed_hosts)
+#print(result.failed_hosts)
 #Check the failed Task
 #print(result['sw2'].exception)
 #Check the Exception
@@ -87,8 +85,8 @@ def hi(task=Task) -> Result:
 #Nornir stores the devices who failed a task and don't call them in the next run
 #Unless you include on_failed=True
 #on_good=False exclude the hosts without error
-result = switch.run(task=hi,on_failed=False,on_good=True)
-print_result(result)
+""" result = switch.run(task=hi,on_failed=False,on_good=True)
+print_result(result) """
 
 #Nornir stores the failed devices in nr.data.failed_hosts
 

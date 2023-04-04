@@ -1,3 +1,0 @@
-interface FastEthernet1/2
- duplex full
- speed 100
