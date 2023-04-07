@@ -11,23 +11,24 @@ from utils.rollback import rollback_point,rollback_diff
 from utils.rollback import rollback as vlan_rollback
 
 
+#Services Variables
+
+devices = ['r2','r3']
+ospf_area = '2'
+device_0_routes = ['192.168.40.0']
+device_1_routes = []
+
 nr = InitNornir(config_file="config.yaml")
+routers = nr.filter(F(name=devices[0]) |  F(name=devices[1]))
 
-area = '2'
-routers = nr.filter(F(area=area))
-
-devices = []
-for host in routers.inventory.hosts:
-    devices.append(str(host))
-
-class Router:
+class OSPF:
     
-    def __init__(self, name, interface_id, ip, mask, area) -> None:
+    def __init__(self, name, interface_id, ip, wildcard_mask, network) -> None:
         self._name = name
         self._interface_id = interface_id
         self._ip = ip
-        self._mask = mask
-        self._area = area
+        self._mask = wildcard_mask
+        self._network = network
     
     @property
     def name(self):
@@ -42,16 +43,16 @@ class Router:
         return self._ip
     
     @property
-    def mask(self):
+    def wildcard_mask(self):
         return self._mask
     
     @property
-    def area(self):
+    def network(self):
         return self._area
 
 #Object will be used to store config for each device, in the future will implemented user inputs, maybe making possibly to remove the devices list      
-device_0 = Router(devices[0],"fastEthernet 1/0","192.168.10.1","255.255.255.252",area)
-device_1 = Router(devices[1],"fastEthernet 1/0","192.168.10.2","255.255.255.252",area)
+device_0 = OSPF(devices[0],"192.168.10.1","0.0.0.3",device_0_routes)
+device_1 = OSPF(devices[1],"192.168.10.2","0.0.0.3",device_1_routes)
 
 device_obj_list = [device_0,device_1]
 
@@ -69,7 +70,7 @@ device_obj_list(object) ==> List with the objects that carries info used in the 
                             device_0 = Router(devices[0],"fastEthernet 1/0","192.168.10.1","255.255.255.252")
                             Possibly going to the iteration of routers.inventory.hosts after the insertion of user inputs.
                             The Class and the device object highly depends on what is being configured with the service.
-                            In the OSPF service, for example we need the name, interface_id, ip, mask and area from the device.
+                            In the OSPF service, for example we need the name, interface_id, ip, wildcard_mask and area from the device.
                             
 devices_object_nornir(object) ==> Nornir object used to execute Tasks, netmiko tasks most of the time.
 
@@ -82,15 +83,19 @@ devices_object_nornir(object) ==> Nornir object used to execute Tasks, netmiko t
 sh_run_append = []
 for device in device_obj_list:
     sh_run_append.append(f"interface {device.interface_id}")
-   
+
 
 def ospf_config (service_name: str, sh_run_append: list, devices_object_nornir: object, devices: list, device_obj_list: list):
     service_id = rollback_point(service_name=service_name,sh_run_append=sh_run_append,devices_object_nornir=routers,devices=devices)
     
+    ospf_id = service_id
+    
+    commannds = [f"router ospf {ospf_id}",""]
+    
     for device in device_obj_list:
         
         router = devices_object_nornir.filter(name=f'{device.name}')
-        router.run(task=netmiko_send_config,config_commands=[f"interface {device.interface_id}",f"ip address {device.ip} {device.mask}",f"no shutdown"])
+        router.run(task=netmiko_send_config,config_commands=[f"interface {device.interface_id}",f"ip address {device.ip} {device.wildcard_mask}",f"no shutdown"])
     
     rollback_diff(sh_run_append=sh_run_append,service_name=service_name,service_id=service_id,devices=devices,devices_object_nornir=routers)
     
