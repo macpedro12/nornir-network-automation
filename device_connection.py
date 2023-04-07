@@ -12,13 +12,12 @@ from utils.rollback import rollback_point,rollback_diff
 from utils.rollback import rollback as connection_rollback
 
 
+devices = ['r4','r5']
+
+
 nr = InitNornir(config_file="config.yaml")
+routers = nr.filter(F(name=devices[0]) |  F(name=devices[1]))
 
-routers = nr.filter(F(area='2'))
-
-devices = []
-for host in routers.inventory.hosts:
-    devices.append(str(host))
 
 class Router:
     
@@ -45,12 +44,12 @@ class Router:
         return self._mask
 
 #Object will be used to store config for each device, in the future will implemented user inputs, maybe making possibly to remove the devices list      
-device_0 = Router(devices[0],"fastEthernet 1/0","192.168.10.1","255.255.255.252")
-device_1 = Router(devices[1],"fastEthernet 1/0","192.168.10.2","255.255.255.252")
+device_0 = Router(devices[0],"fastEthernet 1/0","192.168.50.1","255.255.255.252")
+device_1 = Router(devices[1],"fastEthernet 1/0","192.168.50.2","255.255.255.252")
 
 device_obj_list = [device_0,device_1]
 
-service_name = 'ospf'
+service_name = 'deviceConnection'
 
 
 '''
@@ -86,7 +85,7 @@ def device_connection (service_name: str, sh_run_append: list, devices_object_no
     for device in device_obj_list:
         
         router = devices_object_nornir.filter(name=f'{device.name}')
-        router.run(task=netmiko_send_config,config_commands=[f"interface {device.interface_id}",f"ip address {device.ip} {device.mask}",f"no shutdown"])
+        router.run(task=netmiko_send_config,config_commands=[f"interface {device.interface_id}","no shutdown",f"ip address {device.ip} {device.mask}"])
     
     rollback_diff(sh_run_append=sh_run_append,service_name=service_name,service_id=service_id,devices=devices,devices_object=routers)
 
