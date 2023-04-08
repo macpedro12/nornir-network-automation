@@ -10,6 +10,8 @@ import sys
 
 from utils.rollback import rollback_point,rollback_diff
 from utils.rollback import rollback as connection_rollback
+from utils.convert_cidr import cidr_to_mask
+from utils.post_checks import ping
 
 
 devices = ['r4','r5']
@@ -17,37 +19,14 @@ devices = ['r4','r5']
 
 nr = InitNornir(config_file="config.yaml")
 routers = nr.filter(F(name=devices[0]) |  F(name=devices[1]))
-
-
-class Router:
-    
-    def __init__(self, name, interface_id, ip, mask) -> None:
-        self._name = name
-        self._interface_id = interface_id
-        self._ip = ip
-        self._mask = mask
-    
-    @property
-    def name(self):
-        return self._name
-    
-    @property
-    def interface_id(self):
-        return self._interface_id
-    
-    @property
-    def ip(self):
-        return self._ip
-    
-    @property
-    def mask(self):
-        return self._mask
+device_0_config = "fastEthernet 1/0|192.168.50.1|30"
+device_1_config = "fastEthernet 1/0|192.168.50.2|30"
 
 #Object will be used to store config for each device, in the future will implemented user inputs, maybe making possibly to remove the devices list      
-device_0 = Router(devices[0],"fastEthernet 1/0","192.168.50.1","255.255.255.252")
-device_1 = Router(devices[1],"fastEthernet 1/0","192.168.50.2","255.255.255.252")
+deviceDict = {}
 
-device_obj_list = [device_0,device_1]
+deviceDict[devices[0]] = device_0_config
+deviceDict[devices[1]] = device_1_config
 
 service_name = 'deviceConnection'
 
@@ -56,16 +35,19 @@ service_name = 'deviceConnection'
 Differen between devices(list), device_obj_list(object) and devices_object_nornir(object)
 
 devices(list) ==> List with the name of the hosts present in the nornir inventory after the filter, useful for applying diferent configs in the devices.
+                  It's used to store the devices configured in the service 
                   Ex: Rollback, where we filter the show running result using the host from the list
-                  Maybe it will leave after the insertion of User inputs, because it will be possible to create the object iterating routers.inventory.hosts
 
-device_obj_list(object) ==> List with the objects that carries info used in the service (Name, InterfaceID, IP, ...), it depends on the service.
-                            device_0 = Router(devices[0],"fastEthernet 1/0","192.168.10.1","255.255.255.252")
-                            Possibly going to the iteration of routers.inventory.hosts after the insertion of user inputs.
-                            The Class and the device object highly depends on what is being configured with the service.
-                            In the OSPF service, for example we need the name, interface_id, ip, mask and area from the device.
+deviceDict(dict) ==> Creates a Dict correlating the User Input configs to the devices
+
+Deprecated - Not going to use objects anymore, it doesn't makes senses because we are not re-utilizing the objects. 
+    device_obj_list(object) ==> List with the objects that carries info used in the service (Name, InterfaceID, IP, ...), it depends on the service.
+                                device_0 = Router(devices[0],"fastEthernet 1/0","192.168.10.1","255.255.255.252")
+                                Possibly going to the iteration of routers.inventory.hosts after the insertion of user inputs.
+                                The Class and the device object highly depends on what is being configured with the service.
+                                In the OSPF service, for example we need the name, interface_id, ip, mask and area from the device.
                             
-devices_object_nornir(object) ==> Nornir object used to execute Tasks, netmiko tasks most of the time.
+devices_object(object) ==> Nornir object used to execute Tasks, netmiko tasks most of the time.
 
 '''
 
@@ -74,44 +56,37 @@ devices_object_nornir(object) ==> Nornir object used to execute Tasks, netmiko t
 #In this service, for example, we're storing what interface is being altered, because this service only change interface config.
 #This list is used in the rollback file generation, the rollback filter what sh_run it will execute getting by the index of the loop for devices in devices.
 sh_run_append = []
-for device in device_obj_list:
-    sh_run_append.append(f"interface {device.interface_id}")
+for device in devices:
+    interfaceId = deviceDict[device].split('|')[0]
+    sh_run_append.append(f"interface {interfaceId}")
 
 
-def device_connection (service_name: str, sh_run_append: list, devices_object_nornir: object, devices: list, device_obj_list: list):
+def device_connection (service_name: str, sh_run_append: list, devices_object: object, devices: list):
 
     service_id = rollback_point(service_name=service_name,sh_run_append=sh_run_append,devices_object=routers,devices=devices)
     
-    for device in device_obj_list:
+    for device in devices:
         
-        router = devices_object_nornir.filter(name=f'{device.name}')
-        router.run(task=netmiko_send_config,config_commands=[f"interface {device.interface_id}","no shutdown",f"ip address {device.ip} {device.mask}"])
+        interface_id = deviceDict[device].split('|')[0]
+        ip = deviceDict[device].split('|')[1]
+        mask = cidr_to_mask(int(deviceDict[device].split('|')[2]))
+        
+        router = devices_object.filter(name=f'{device}')
+        router.run(task=netmiko_send_config,config_commands=[f"interface {interface_id}","no shutdown",f"ip address {ip} {mask}"])
     
     rollback_diff(sh_run_append=sh_run_append,service_name=service_name,service_id=service_id,devices=devices,devices_object=routers)
-
-def ping_post_check (devices_object_nornir: object, device_obj_list: list):
-
-    for index, device in enumerate(device_obj_list):
-        otherEnd_device = device_obj_list[index-1]
-        router = devices_object_nornir.filter(name=f'{device.name}')
-        result = router.run(task=netmiko_send_command,command_string=f"ping {otherEnd_device.ip}",read_timeout=60)
-        
-        if 'Success rate is 0 percent' in str(result[device.name][0]):
-            print(f'It was not possible to ping {otherEnd_device.name}')
-        else:
-            print(f'{device.name} connected to {otherEnd_device.name}')
-
 
 
 def service():
     
-    device_connection(service_name = service_name, sh_run_append = sh_run_append, devices_object_nornir = routers, devices = devices, device_obj_list = device_obj_list)
-    ping_post_check(devices_object_nornir = routers, device_obj_list = device_obj_list)
+    device_connection(service_name = service_name, sh_run_append = sh_run_append, devices_object = routers, devices = devices)
+    
+    ping(devices_object = routers, device = devices[0], ping_destination_device= devices[1], ping_destination_ip= deviceDict[devices[1]].split('|')[1])
     
 def rollback(service_id: str):
 
     connection_rollback(devices_object=routers,service_name=service_name,service_id=service_id,devices=devices)
-    
+
 if __name__ == '__main__':
     args = sys.argv
     # args[0] = current file
