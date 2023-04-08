@@ -63,18 +63,25 @@ def general_rollback_block(service_id: int, service_name: str, sh_run_append: st
     
     for index, host in enumerate(devices):
         
-        general_rollback = devices_object.run(task=netmiko_send_command,command_string=f"show running-config {sh_run_append[index]}")
+        rollback_command_file_itf = open(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}/GeneralConfig.txt",'a+')
         
+        if type(sh_run_append) is list:
+            general_rollback = devices_object.run(task=netmiko_send_command,command_string=f"show running-config {sh_run_append[index]}")
+        else:
+            general_rollback = devices_object.run(task=netmiko_send_command,command_string=f"show running-config {sh_run_append}")
+
         #Execute the show run on both devices, but filter the result by host
         command_list = str(general_rollback[f"{host}"][0]).splitlines()
         command_list = command_list[4:]
-        #Removes 'end' from the command file - netmiko_send_config already does that
-        del command_list[-1]
         
-        rollback_command_file_itf = open(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}/GeneralConfig.txt",'a+')
-        
-        for commands in command_list:
-            rollback_command_file_itf.write(f"{commands}\n")
+        if command_list == []:
+            rollback_command_file_itf.write(f"no {sh_run_append}")
+        else:
+            #Removes 'end' from the command file - netmiko_send_config already does that
+            del command_list[-1]
+                    
+            for commands in command_list:
+                rollback_command_file_itf.write(f"{commands}\n")
         
         rollback_command_file_itf.close()
     return "ITF FILE"
@@ -109,42 +116,52 @@ def rollback_database(service_name: str, devices: list, service_id: int) -> Resu
 def rollback_diff(sh_run_append: str, service_name:str, service_id: int, devices: list, devices_object: object):
     for index, host in enumerate(devices):
         #Uses the file used to store the old config
-        initial_config = open(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}/GeneralConfig.txt",'r')
+        initial_config = open(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}/GeneralConfig.txt",'r')       
         initial_config_list = initial_config.readlines()
         initial_config_list = [sub.replace("\n","") for sub in initial_config_list] 
         initial_config.close()
         
-        new_config = devices_object.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config {sh_run_append[index]}")
-        
-        #Execute the show run on both devices, but filter the result by host
-        new_config_list = str(new_config[f"{host}"][0]).splitlines()
-        new_config_list = new_config_list[4:]
-        #Removes 'end' from the command file - netmiko_send_config already does that
-        del new_config_list[-1]
-        
-        #New rollback file
-        new_rollback_file = open(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}/GeneralConfig.txt",'w')
-        for command in new_config_list:
-            combined_list = "\t".join(initial_config_list)
-            #Check if the new config is in the old configuration.
-            if command.strip() in initial_config_list:
-                new_rollback_file.write(f"{command}\n")
+        if len(initial_config_list)==1 and 'no' in initial_config_list[0]:
             
-            #Check if the new config is a changed version of the old config.
-            #Ex: Old - speed 10  New - speed 100
-            #Gets the speed str, checks if is in the list and gets its match.
-            #Probably will need further improvements 
-            elif command.strip().split(" ")[0] in combined_list:
-                command = command.strip().split(" ")[0]
-                match = [sub for sub in initial_config_list if command in sub]
-                new_rollback_file.write(f"{match[0]}\n")
+            print('Keeping the same file') 
             
-            #Check if the new config is really new lol     
-            elif command.strip() not in initial_config_list:
-                new_rollback_file.write(f"no {command.strip()}\n")
-        #Check if a interface was in a shutdown state, it wasn't possible to get this config in the diff, because the show running don't displays 'no shutdown'    
-        if "shutdown" in combined_list:
-                new_rollback_file.write(f"shutdown\n")
+        else:
+        
+            if type(sh_run_append) is list:
+                new_config = devices_object.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config {sh_run_append[index]}")
+            else:
+                new_config = devices_object.run(name="Interface Config",task=netmiko_send_command,command_string=f"show running-config {sh_run_append}")
                 
-        new_rollback_file.close()
+            #Execute the show run on both devices, but filter the result by host
+            new_config_list = str(new_config[f"{host}"][0]).splitlines()
+            new_config_list = new_config_list[4:]
+            #Removes 'end' from the command file - netmiko_send_config already does that
+            del new_config_list[-1]
+                
+            
+            #New rollback file
+            new_rollback_file = open(f"/mnt/c/Users/Pedro/Desktop/nornir/utils/rollback/rollback_{service_name}/rollback_{service_name}_{service_id}_{host}/GeneralConfig.txt",'w')
+            for command in new_config_list:
+                combined_list = "\t".join(initial_config_list)
+                #Check if the new config is in the old configuration.
+                if command.strip() in initial_config_list:
+                    new_rollback_file.write(f"{command}\n")
+                
+                #Check if the new config is a changed version of the old config.
+                #Ex: Old - speed 10  New - speed 100
+                #Gets the speed str, checks if is in the list and gets its match.
+                #Probably will need further improvements 
+                elif command.strip().split(" ")[0] in combined_list:
+                    command = command.strip().split(" ")[0]
+                    match = [sub for sub in initial_config_list if command in sub]
+                    new_rollback_file.write(f"{match[0]}\n")
+                
+                #Check if the new config is really new lol     
+                elif command.strip() not in initial_config_list:
+                    new_rollback_file.write(f"no {command.strip()}\n")
+            #Check if a interface was in a shutdown state, it wasn't possible to get this config in the diff, because the show running don't displays 'no shutdown'    
+            if "shutdown" in combined_list:
+                    new_rollback_file.write(f"shutdown\n")
+                    
+            new_rollback_file.close()
 
