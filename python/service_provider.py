@@ -11,29 +11,30 @@ nr = InitNornir(config_file="config.yaml")
 # Get service name
 
 # Later
-""" service_name = str(input("Select the service: ")).replace(" ","")
+service_name = str(input("Select the service (Default = Device Connection): ") or "Device Connection").replace(" ","")
 service_name = service_name.lower()
-print(service_name) """
+print(service_name)
 
-service_name = "deviceconnection"
+device_number = int(input("Number of devices being configured (Default = 2): ") or 2)
+loop_var = 1
+device_list = []
+
+while device_number >= loop_var:
+    device_list.append(str(input(f"Enter the {loop_var}º device: ") or f"r{loop_var}"))
+    loop_var+=1
+    
 # Find out a way to import the functions using variables.
 # Here we import the function that get the varibles for the service, then execute it.
 # This will exclude the need for multiples 'if' conditions and make it easier to add new services config templates. 
-service_var = import_module(f"service_config_templates.{service_name}").__getattribute__(f"{service_name}_var")
-service_var = service_var()
+service_command = import_module(f"service_config_templates.{service_name}").__getattribute__(f"{service_name}_command")
 
-service_template = import_module(f"service_config_templates.{service_name}").__getattribute__(f"{service_name}_template")
-
-for device in service_var:
+for device in device_list:
     
+    print(f"Initializing the configuration of the Device {device}")
     router = nr.filter(name=f'{device}')
-    command = service_template(device['interface'],device['ip'],device['mask'])
+    command = service_command()
     router.run(task=netmiko_send_config,config_commands=[command])
+    
+    print(f"End of the configuration of the Device {device}")
 
-
-print(service_var)
-
-print(service_template)
-
-print(service_name)
 
