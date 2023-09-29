@@ -12,3 +12,8 @@
 ### Diagram
 
 ![Project Diagram](doc/images/diagram.png)
+
+## Libs
+
+1. nornir
+2. nornir-netmiko
