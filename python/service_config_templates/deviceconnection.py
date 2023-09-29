@@ -1,5 +1,14 @@
 from utils.convert_cidr import cidr_to_mask
 
+def deviceconnection_template(interface,ip_address,mask):
+
+    template = f'''
+interface {interface}
+  ip address {ip_address} {mask}
+  no shutdown'''
+
+    return template
+
 def deviceconnection_var():
     
     # Get service variables
@@ -7,48 +16,31 @@ def deviceconnection_var():
     ## Get Devices Names
 
     # Later
-    # device1 = input("First device name: ")
-    # device2 = input("Second device name: ")
-    # cidr = input("Enter the CIDR: ")
+    cidr = int(input("Enter the CIDR (Default = 30): ") or 30)
 
-    device1 = 'r1'
-    device2 = 'r6'
-    cidr = 30
+    """ device = 'r1'
+    cidr = 30 """
 
     ## Get config
 
     # Later
-    # device1_interface = input("First device interface: ")
-    # device1_ip = input("First device IPv4: ")
-    # device2_interface = input("Second device interface: ")
-    # device2_ip = input("Second device IPv4: ")
+    device_interface = str(input("First device interface (Default = fastEthernet1/0): ") or "fastEthernet1/0")
+    device_ip = str(input("First device IPv4 (Default = 10.10.10.1) : ") or "10.10.10.1")
 
-    device1_interface = 'fastEthernet1/1'
-    device1_ip = '10.10.10.1'
-    device2_interface = 'fastEthernet0/1'
-    device2_ip = '10.10.10.2'
+    """ device_interface = 'fastEthernet1/1'
+    device_ip = '10.10.10.1' """
     
-    device1_var = {
-        'device_name':device1,
-        'interface':device1_interface,
-        'ip':device1_ip,
-        'mask': str(cidr_to_mask(cidr))
-    }
-    
-    device2_var = {
-        'device_name':device2,
-        'interface':device2_interface,
-        'ip':device2_ip,
+    device_var = {
+        'interface':device_interface,
+        'ip':device_ip,
         'mask': str(cidr_to_mask(cidr))
     }
         
-    return [device1_var,device2_var]
+    return device_var
 
-def deviceconnection_template(interface,ip_address,mask):
+def deviceconnection_command():
 
-    command = f'''
-interface {interface}
-  ip address {ip_address} {mask}
-  no shutdown'''
+    var = deviceconnection_var()
+    command = deviceconnection_template(var['interface'],var['ip'],var['mask'])
   
     return command
