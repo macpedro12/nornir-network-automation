@@ -26,7 +26,7 @@ while device_number >= loop_var:
 # Find out a way to import the functions using variables.
 # Here we import the function that get the varibles for the service, then execute it.
 # This will exclude the need for multiples 'if' conditions and make it easier to add new services config templates. 
-service_command = import_module(f"service_config_templates.{service_name}").__getattribute__(f"{service_name}_command")
+service_command = import_module(f"service_config.{service_name}").__getattribute__(f"{service_name}")
 
 for device in device_list:
     
