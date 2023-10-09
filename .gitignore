@@ -3,3 +3,4 @@ rollback
 nornir.log
 inventory
 config.yaml
+env
