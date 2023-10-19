@@ -15,7 +15,7 @@ service_name = str(input("Select the service (Default = Device Connection): ") o
 service_name = service_name.lower()
 print(service_name)
 
-device_number = int(input("Number of devices being configured (Default = 2): ") or 2)
+device_number = int(input("Number of devices being configured (Default = 2): ") or 1)
 loop_var = 1
 device_list = []
 
@@ -33,8 +33,13 @@ for device in device_list:
     print(f"Initializing the configuration of the Device {device}")
     router = nr.filter(name=f'{device}')
     command = service_command()
-    router.run(task=netmiko_send_config,config_commands=[command])
+    new_command = []
     
+    for line in command.split('\n'):
+        new_command.append(line)
+        
+    router.run(task=netmiko_send_config,config_commands=new_command)
+
     print(f"End of the configuration of the Device {device}")
 
 
