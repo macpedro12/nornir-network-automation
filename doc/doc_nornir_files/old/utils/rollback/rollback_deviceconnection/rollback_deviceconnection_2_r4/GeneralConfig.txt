@@ -1,0 +1,5 @@
+interface FastEthernet0/1
+ no ip address
+ speed auto
+ duplex auto
+shutdown
