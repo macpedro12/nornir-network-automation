@@ -5,7 +5,9 @@ from nornir_netmiko import netmiko_send_config
 from importlib import import_module
 import sys
 
-from utils.convert_cidr import cidr_to_mask
+from commons.convert_cidr import cidr_to_mask
+
+
 
 nr = InitNornir(config_file="config.yaml")
 # Get service name

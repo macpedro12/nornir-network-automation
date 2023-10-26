@@ -1,5 +1,6 @@
-from utils.convert_cidr import cidr_to_mask
 from jinja2 import FileSystemLoader, Environment
+from commons.convert_cidr import cidr_to_mask
+
 
 
 def deviceconnection():
@@ -22,10 +23,8 @@ def deviceconnection():
 
     """ device_interface = 'fastEthernet1/1'
     device_ip = '10.10.10.1' """
-        
-    file_loader = FileSystemLoader('python/service_config/template')
+    file_loader = FileSystemLoader('python/src/service_provider/services/deviceconnection/template')
     env = Environment(loader=file_loader)
-            
     template_file = 'deviceconnection.txt'
     
     template = env.get_template(template_file)
@@ -36,4 +35,9 @@ def deviceconnection():
         mask = str(cidr_to_mask(cidr))
     )
 
+    print(content)
+    
     return content
+
+if __name__ == "__main__":
+   deviceconnection()

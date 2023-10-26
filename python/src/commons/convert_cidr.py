@@ -48,3 +48,5 @@ def cidr_to_mask(cidr: int):
         
     return wildcard    
 
+if __name__ == "__main__":
+   pass
