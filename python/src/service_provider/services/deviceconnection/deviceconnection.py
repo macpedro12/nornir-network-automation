@@ -12,13 +12,12 @@ def deviceconnection(device):
     # Later
     cidr = int(input("Enter the CIDR (Default = 30): ") or 30)
 
-    """ device = 'r1'
-    cidr = 30 """
-
     ## Get config
 
     # Later
     device_interface = str(input(f"Device {device} interface (Default = fastEthernet1/0): ") or "fastEthernet1/0")
+    #Router config asks for the first letter in uppercase
+    device_interface = device_interface[0:1].upper()+device_interface[1:]
     device_ip = str(input(f"Device {device} IPv4 (Default = 10.10.10.1) : ") or "112.123.10.1")
 
     file_loader = FileSystemLoader('python/src/service_provider/services/deviceconnection/template')
