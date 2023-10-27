@@ -3,7 +3,7 @@ from commons.convert_cidr import cidr_to_mask
 
 
 
-def deviceconnection():
+def deviceconnection(device):
     
     # Get service variables
 
@@ -18,11 +18,9 @@ def deviceconnection():
     ## Get config
 
     # Later
-    device_interface = str(input("First device interface (Default = fastEthernet1/0): ") or "fastEthernet1/0")
-    device_ip = str(input("First device IPv4 (Default = 10.10.10.1) : ") or "112.123.10.1")
+    device_interface = str(input(f"Device {device} interface (Default = fastEthernet1/0): ") or "fastEthernet1/0")
+    device_ip = str(input(f"Device {device} IPv4 (Default = 10.10.10.1) : ") or "112.123.10.1")
 
-    """ device_interface = 'fastEthernet1/1'
-    device_ip = '10.10.10.1' """
     file_loader = FileSystemLoader('python/src/service_provider/services/deviceconnection/template')
     env = Environment(loader=file_loader)
     template_file = 'deviceconnection.txt'
@@ -40,4 +38,4 @@ def deviceconnection():
     return content
 
 if __name__ == "__main__":
-   deviceconnection()
+   pass
