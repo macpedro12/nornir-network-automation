@@ -27,7 +27,7 @@ def get_last_id():
 # Also, now we're getting the whole tree from a root config, ex: interface fastEthernet0/0.
 # This will probably causes errors if other services changes something especific in one of the branches of an already changed root config.
 # In the future will be developed a code that verifies if that config is already applied by a service.
-# But for now, this is the best global option that we have, since some configurations have other ways to show then. 
+# But for now, this is the best global option that we have, since some configurations have different ways to show then. 
     
 def get_initial_config(device_name,nornir_device_object,configs_to_apply): 
     
@@ -40,7 +40,6 @@ def get_initial_config(device_name,nornir_device_object,configs_to_apply):
     config = router.run(task=netmiko_send_command,command_string=f"show running-config")
 
     full_running_config = str(config[f"{device_name}"][0]).splitlines()
-        
     initial_config = []
     
     root_configs = []
@@ -49,10 +48,9 @@ def get_initial_config(device_name,nornir_device_object,configs_to_apply):
         if config[0] != ' ':
             root_configs.append(config)
     
-    print(root_configs)
     # Check if the root config that it will be applied is in the actual running config.   
     for config in root_configs:
-
+        
         if config in full_running_config:
             
             initial_config.append(config)
