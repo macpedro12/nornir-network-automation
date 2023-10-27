@@ -8,6 +8,7 @@ nr = InitNornir(config_file="config.yaml")
 device = 'r1'
 command = ['interface FastEthernet0/1']
 
+# Search in the database the last ID used by a service. 
 def get_last_id():
     conn = psycopg2.connect( 
         dbname='postgres', 
@@ -26,7 +27,12 @@ def get_last_id():
     conn.close()
     
     return last_id[0]
-    
+
+# Gets the whole router configuration and filter for the first command of the service.
+# OBS: Still working on the best way to get the initial config. 
+# Configurations with more than one subtrees now are not working since we are stopping the loop after getting the first '!' (End of tree in show running)
+# Also, router with imense quantity of configuration would make this proccess slower.
+# But for now, this is the best global option that we have, since some configurations have other ways to show then.    
 def get_initial_config(device_name,nornir_device_object,command):
     
     
