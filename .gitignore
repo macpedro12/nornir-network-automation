@@ -1,6 +1,6 @@
 __pycache__
-rollback
 nornir.log
 inventory
 config.yaml
 env
+*egg-info
