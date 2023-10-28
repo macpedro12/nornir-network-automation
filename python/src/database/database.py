@@ -2,8 +2,6 @@ import os
 import shutil
 import psycopg2
 
-from database.service_object import Service
-
 # This script will be used to create the database
 def database_insert(service_info):
     
@@ -27,12 +25,39 @@ def database_insert(service_info):
     conn.close()
 
 #Used to consult the database 
-def database_get(id,device,service_config):
+def database_get(id,collum = ''):
         
-    # 1. Generate Service ID
+    conn = psycopg2.connect( 
+        dbname='postgres', 
+        user='admin', 
+        password='admin123', 
+        host='localhost', 
+        port='5432' 
+    ) 
+
+    cur = conn.cursor()
     
-    # 2. Generate applied config
+    if collum == '' :    
+        cur.execute(f'SELECT * FROM service WHERE service_id = {id}')
+        response = list(cur.fetchone())
+    else:
+        try:
+            cur.execute(f'SELECT {collum} FROM service WHERE service_id = {id}')
+            response = cur.fetchone()[0]
+        except:
+            print("Collumn doesn't exists, follow the collumns from the service table: 'service_id','service_name','applied_config','initial_config','status'. ")
     
-    # 3. Generate service rollback config or get previous config
-    
-    print()
+    try:
+        
+        cur.close()
+        conn.close()
+        return response
+        
+    except:
+        
+        cur.close()
+        conn.close()
+        pass
+       
+if __name__ == "__main__":
+   pass
