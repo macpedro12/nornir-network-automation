@@ -67,7 +67,8 @@ def create_service():
         applied_config_json = json.dumps(applied_config_dict)
         
         print(f"End of the configuration of the Device {device}")
-        service_status = "Applied"
+        
+    service_status = "Applied"
         
     return [service_id,service_name,applied_config_json,initial_config_json,service_status]
 
