@@ -11,15 +11,15 @@ from database.get_device_config import get_initial_config, get_last_id
 # Service Selection, Number of Devices and Devices Names are in every service creation.
 # Specific variables will be inserted depending on the selected service.
 
-def create_service():
+def create_service(service):
     
     nr = InitNornir(config_file="config.yaml")
     # Get service name
 
     # Service Selection
-    service_selected = str(input("Select the service (Default = Device Connection): ") or "Device Connection").replace(" ","")
-    service_selected = service_selected.lower()
-
+    
+    service_applied = service
+    
     service_id = get_last_id() + 1
     service_name = str(input("Name of the service (Default = Test): ") or "Test")
     
@@ -37,15 +37,17 @@ def create_service():
     
     #Added the try and except, because of errors when calling this function in main.py
     try: 
-        service_config = import_module(f"src.service_provider.services.{service_selected}.{service_selected}").__getattribute__(f"{service_selected}")
+        service_config = import_module(f"src.service_provider.services.{service_applied}.{service_applied}").__getattribute__(f"{service_applied}")
     except:
-        service_config = import_module(f"services.{service_selected}.{service_selected}").__getattribute__(f"{service_selected}")
+        service_config = import_module(f"services.{service_applied}.{service_applied}").__getattribute__(f"{service_applied}")
         
 
     # Used to store the configs from the device
     # Ex: {'r1':'config_x','r2':'config_y'}
     initial_config_dict = {}
     applied_config_dict = {}
+    
+    edit_id = 0
     
     for device in device_list:
         
@@ -78,7 +80,7 @@ def create_service():
             logger = logging.getLogger("paramiko")  # paramiko not netmiko
             logger.addHandler(logging.NullHandler())
         
-    return [service_id,service_name,applied_config_json,initial_config_json,service_status]
+    return [service_id,edit_id,service_applied,service_name,applied_config_json,initial_config_json,service_status]
     
 if __name__ == "__main__":
    pass
