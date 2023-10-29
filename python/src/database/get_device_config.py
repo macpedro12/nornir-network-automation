@@ -13,13 +13,16 @@ def get_last_id():
 
     cur = conn.cursor()
 
-    cur.execute('SELECT service_id FROM service ORDER BY service_id DESC LIMIT 1')
+    cur.execute('SELECT service_id FROM services ORDER BY service_id DESC LIMIT 1')
     last_id = cur.fetchone() 
     
     cur.close()
     conn.close()
     
-    return last_id[0]
+    try:
+        return last_id[0]
+    except TypeError:
+        return 0
 
 # Gets the whole router configuration and filter for the first config of the service.
 # OBS: Still working on the best way to get the initial config. 
