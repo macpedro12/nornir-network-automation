@@ -1,7 +1,7 @@
 # How to start the PostgresSQL database on a Docker Container.
 
 1. Enter the database/ folder
-2. Execute the command 'docker-compose up --build'
+2. Execute the command 'docker-compose up --build' (If image don't exist) or 'docker-compose up'
 The --build flag will make sure that the container receives the .sql script and create the table.
 
 The postgres database will accept local connections (localhost) on the port 5432. [TODO] Analyse if it is viable to change the listen-address conf.
