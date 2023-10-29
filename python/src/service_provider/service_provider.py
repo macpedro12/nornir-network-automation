@@ -1,7 +1,7 @@
 from nornir import InitNornir
-from nornir.core.filter import F
 from nornir_netmiko import netmiko_send_config
 
+import logging
 import json
 from importlib import import_module
 
@@ -57,20 +57,28 @@ def create_service():
         for line in config.split('\n'):
             config_to_apply.append(line)
         
-        initial_config = get_initial_config(device_name=device,nornir_device_object=nr,configs_to_apply=config_to_apply)
-        initial_config_dict[device] = initial_config
-        initial_config_json = json.dumps(initial_config_dict)
-        
-        router.run(task=netmiko_send_config,config_commands=config_to_apply)
-        
-        applied_config_dict[device] = config_to_apply
-        applied_config_json = json.dumps(applied_config_dict)
-        
-        print(f"End of the configuration of the Device {device}")
-        
-    service_status = "Applied"
+        try:
+            
+            initial_config = get_initial_config(device_name=device,nornir_device_object=nr,configs_to_apply=config_to_apply)
+            initial_config_dict[device] = initial_config
+            initial_config_json = json.dumps(initial_config_dict)
+            
+            config_output = router.run(task=netmiko_send_config,config_commands=config_to_apply)
+            
+            applied_config_dict[device] = config_to_apply
+            applied_config_json = json.dumps(applied_config_dict)
+            
+            print(f"End of the configuration of the Device {device}")
+            service_status = "Applied"
+            
+             
+        except:
+            print(f"Unable to insert configuration into the device {device}. Check device availability")
+            # After the first exception (NornirExecutionError which get what Tasks failed), Paramiko throws an exception that I'm unable to get normally.
+            logger = logging.getLogger("paramiko")  # paramiko not netmiko
+            logger.addHandler(logging.NullHandler())
         
     return [service_id,service_name,applied_config_json,initial_config_json,service_status]
-
+    
 if __name__ == "__main__":
    pass

@@ -5,12 +5,7 @@ from commons.convert_cidr import cidr_to_mask
 
 def deviceconnection(device):
     
-    # Get service variables
-
-    ## Get Devices Names
-
-    # Later
-    cidr = int(input("Enter the CIDR (Default = 30): ") or 30)
+    # Get service variables   
 
     ## Get config
 
@@ -19,7 +14,8 @@ def deviceconnection(device):
     #Router config asks for the first letter in uppercase
     device_interface = device_interface[0:1].upper()+device_interface[1:]
     device_ip = str(input(f"Device {device} IPv4 (Default = 10.10.10.1) : ") or "112.123.10.1")
-
+    cidr = int(input("Enter the CIDR (Default = 30): ") or 30)
+    
     file_loader = FileSystemLoader('python/src/service_provider/services/deviceconnection/template')
     env = Environment(loader=file_loader)
     template_file = 'deviceconnection.txt'
