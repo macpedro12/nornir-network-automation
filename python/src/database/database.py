@@ -16,7 +16,7 @@ def database_update(id, collumn_to_update, data):
 
     cur = conn.cursor()
     
-    cur.execute(f"UPDATE service SET {collumn_to_update} = '{data}' WHERE service_id = {id}")
+    cur.execute(f"UPDATE services SET {collumn_to_update} = '{data}' WHERE service_id = {id}")
 
     conn.commit()
    
@@ -36,8 +36,8 @@ def database_insert(service_info, update_collumn = ''):
 
     cur = conn.cursor() 
     
-    cur.execute('INSERT INTO service (service_id,service_name,applied_config,initial_config,status) VALUES (%s,%s,%s,%s,%s)',
-                    (service_info[0],service_info[1],service_info[2],service_info[3],service_info[4]))
+    cur.execute('INSERT INTO services (service_id,edit_id,service_applied,service_name,applied_config,initial_config,status) VALUES (%s,%s,%s,%s,%s,%s,%s)',
+                    (service_info[0],service_info[1],service_info[2],service_info[3],service_info[4],service_info[5],service_info[6]))
 
     conn.commit()
    
@@ -57,7 +57,7 @@ def database_get(id,collum = ''):
 
     cur = conn.cursor()
     
-    cur.execute(f'SELECT service_id FROM service')    
+    cur.execute(f'SELECT service_id FROM services')    
     existing_ids = cur.fetchall()
     
     # To avoid running through the whole list of IDs more than one time, the ID will be inserted into a tuple.
@@ -68,12 +68,12 @@ def database_get(id,collum = ''):
 
         if collum == '' :   
             
-            cur.execute(f'SELECT * FROM service WHERE service_id = {id}')
+            cur.execute(f'SELECT * FROM services WHERE service_id = {id}')
             response = list(cur.fetchone())
 
         else:
             try:
-                cur.execute(f'SELECT {collum} FROM service WHERE service_id = {id}')
+                cur.execute(f'SELECT {collum} FROM services WHERE service_id = {id}')
                 response = cur.fetchone()[0]
             except:
                 print("Collumn doesn't exists, follow the collumns from the service table: 'service_id','service_name','applied_config','initial_config','status'. ")
