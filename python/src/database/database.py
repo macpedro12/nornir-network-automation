@@ -2,8 +2,25 @@ import os
 import shutil
 import psycopg2
 
-# This script will be used to update the database
+def database_delete(id):
+    conn = psycopg2.connect( 
+        dbname='postgres', 
+        user='admin', 
+        password='admin123', 
+        host='localhost', 
+        port='5432' 
+    ) 
 
+    cur = conn.cursor() 
+    
+    cur.execute(f'DELETE FROM services WHERE service_id = {id}')
+
+    conn.commit()
+   
+    cur.close()
+    conn.close()
+
+# This script will be used to update the database
 def database_update(id, collumn_to_update, data):
     
     conn = psycopg2.connect( 
@@ -36,7 +53,7 @@ def database_insert(service_info, update_collumn = ''):
 
     cur = conn.cursor() 
     
-    cur.execute('INSERT INTO services (service_id,edit_id,service_applied,service_name,applied_config,initial_config,status) VALUES (%s,%s,%s,%s,%s,%s,%s)',
+    cur.execute('INSERT INTO services (service_id,service_applied,service_name,applied_config,initial_config,status,date) VALUES (%s,%s,%s,%s,%s,%s,%s)',
                     (service_info[0],service_info[1],service_info[2],service_info[3],service_info[4],service_info[5],service_info[6]))
 
     conn.commit()
